@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="font-nunito font-medium bg-gray-50">
+    <header class="bg-indigo-500 py-3 px-2">
+      <nav class="max-w-6xl px-2 m-auto text-gray-200">
+        <ul class="flex justify-between align-middle">
+          <ul class="flex space-x-8">
+            <ul class="py-2">
+              <li>
+                <a class="uppercase text-xl" href="#"
+                  >getmyuni <span class="font-bold"> learn</span></a
+                >
+              </li>
+            </ul>
+            <ul class="space-x-4 p-2 hidden md:flex">
+              <li><a href="#">All Courses</a></li>
+              <li><a href="#">Tech Courses</a></li>
+              <li><a href="#">Degree Courses</a></li>
+              <li><a href="#">Enterprises</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </ul>
+          <ul>
+            <li>
+              <a
+                class="transform btn btn-white uppercase font-extrabold active:-translate-y-1"
+                href="#"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero mt-14 card max-w-6xl m-auto px-2">
+      <div class="flex justify-between">
+        <div class="p-8 w-full">
+          <div class="flex">
+            <img
+              src="./img/nimims-logo.jpg"
+              class="w-20 h-24 inline-block mr-6"
+              alt=""
+            />
+            <h3 class="text-2xl font-semibold text-gray-700 tracking-wide">
+              MBA (Executive) with Specialisation in Business Analytics - NMIMS
+              <span
+                class="clip-desgin table text-gray-100 bg-teal-500 font-bold px-4 py-1 uppercase text-sm"
+                >pg-degree</span
+              >
+            </h3>
+          </div>
+          <h4 class="pt-5 tracking-wide text-gray-400">
+            Become a data-driven manager,with a new age MBA from NMIMS Global
+            Access School For Continuing Education. Exclusively for
+            professionals with work experience. Start your MBA journey at Rs.
+            13,375 per month today.
+          </h4>
+          <div class="grid grid-cols-3 gap-4 pt-6" id="course_add_details">
+            <h4 class="">
+              AICTE Approved
+              <span class="">Degree recognition</span>
+            </h4>
+            <h4>NACC A+ Grade <span>University accreditation</span></h4>
+            <h4>18 Months <span>recommended 15-18 hrs/week</span></h4>
+            <h4>Sep 27, 2020 <span>program start date</span></h4>
+            <h4>EMI options <span>starting at rs 13,563</span></h4>
+          </div>
+        </div>
+        <div>
+          <img
+            class="h-96 w-full object-fill rounded-r hidden lg:block"
+            src="./img/course_image.jpg"
+            alt="mba_course"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="card max-w-6xl m-auto mt-4 px-2" id="inner_nav">
+      <nav class="px-4">
+        <ul class="flex space-x-12">
+          <li><a class="selected" href="#course">Syllabus</a></li>
+          <li><a href="#career_support">Career support</a></li>
+          <li><a href="#faculty">faculty</a></li>
+          <li><a href="#admission_process">admission process</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="data_section" class="mt-2 px-2 relative max-w-6xl m-auto">
+      <section id="form" class="absolute hidden lg:block right-0 h-full">
+        <div class="w-88 p-5 card sticky top-0">
+          <div class="text-center pt-6">
+            <h4 class="text-gray-700 font-bold text-xl">
+              Interested in this program
+            </h4>
+            <p class="text-gray-400 text-base p-1">
+              Please fill the following details
+            </p>
+          </div>
+          <form action="" class="mt-3">
+            <div>
+              <label for="fname">Full name</label>
+              <input type="text" name="fname" id="fname" class="border" />
+            </div>
+            <div>
+              <label for="email">email address</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div>
+              <label for="mob_num">mobile number</label>
+              <input type="text" name="mob_num" id="mob_num" />
+            </div>
+            <div>
+              <label for="city">Select city</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <button class="w-full mt-4 p-2 btn-orange" type="submit">
+              apply now
+            </button>
+          </form>
+        </div>
+      </section>
+      <section id="course" class="max-w-3xl">
+        <h4 class="block pt-10 pb-2 text-2xl font-bold text-gray-700">
+          Course Syllabus
+        </h4>
+        <div class="mt-2 flex justify-between">
+          <p class="w-120 text-gray-500">
+            Best-in-class content by leading faculty and industry leaders in the
+            form of videos, cases and projects sessions
+          </p>
+          <a href="#" class="text-center uppercase btn-orange p-2 text-sm"
+            >download syllabus</a
+          >
+        </div>
+        <div id="course_header" class="card mt-10 p-2">
+          <ul class="flex space-x-12">
+            <li><a href="#" class="selected p-1">term 1</a></li>
+            <li><a href="#">term 2</a></li>
+            <li><a href="#">term 3</a></li>
+            <li><a href="#">term 4</a></li>
+          </ul>
+        </div>
+        <div id="course_lessons" class="card mt-1 p-8">
+          <div
+            class="card-rounded_top flex justify-between px-7 py-3 relative shadow-none"
+            data-ln="1"
+          >
+            <h4 class="w-96">Marketing Management - I</h4>
+            <p>
+              4 weeks
+              <span class="block uppercase text-sm text-gray-400"
+                >duration</span
+              >
+            </p>
+            <p>
+              01
+              <span class="block uppercase text-xs text-gray-400"
+                >assignments</span
+              >
+            </p>
+            <button
+              class="absolute bg-orange-500 text-white hover:bg-white hover:text-orange-500 transition-all duration-300 font-extrabold px-3 py-1 rounded left-0 transform -translate-x-1/2 focus:outline-none"
+            >
+              +
+            </button>
+          </div>
+          <div
+            class="card-dark lesson_details_1 hidden text-gray-500 px-7 py-4"
+          >
+            <p>Fundamentals of marketing</p>
+            <p>Marketing channels</p>
+          </div>
+          <div
+            class="card-rounded_top flex justify-between px-7 py-3 relative shadow-none mt-4"
+            data-ln="2"
+          >
+            <h4 class="w-96">Business Communication</h4>
+            <p>
+              4 weeks
+              <span class="block uppercase text-sm text-gray-400"
+                >duration</span
+              >
+            </p>
+            <p>
+              01
+              <span class="block uppercase text-xs text-gray-400"
+                >assignments</span
+              >
+            </p>
+            <button
+              class="absolute bg-orange-500 text-white hover:bg-white hover:text-orange-500 transition-all duration-300 font-extrabold px-3 py-1 rounded left-0 transform -translate-x-1/2 focus:outline-none"
+            >
+              +
+            </button>
+          </div>
+          <div
+            class="card-dark hidden lesson_details_2 text-gray-500 px-7 py-4"
+          >
+            <p>Fundamentals of business startegy</p>
+            <p>Business goals</p>
+          </div>
+
+          <div
+            class="card-rounded_top flex justify-between px-7 py-3 mt-4 relative shadow-none"
+            data-ln="3"
+          >
+            <h4 class="w-96">Organizaton behaviour, HR Management, Ethics</h4>
+            <p>
+              4 weeks
+              <span class="block uppercase text-sm text-gray-400"
+                >duration</span
+              >
+            </p>
+            <p>
+              01
+              <span class="block uppercase text-xs text-gray-400"
+                >assignments</span
+              >
+            </p>
+            <button
+              class="absolute bg-orange-500 text-white hover:bg-white hover:text-orange-500 transition-all duration-300 font-extrabold px-3 py-1 rounded left-0 transform -translate-x-1/2 focus:outline-none"
+            >
+              +
+            </button>
+          </div>
+          <div
+            class="card-dark hidden lesson_details_3 text-gray-500 px-7 py-4"
+          >
+            <p>Setting up of Organizaton</p>
+            <p>Business ethics and code of conduct</p>
+          </div>
+
+          <div
+            class="card-rounded_top flex justify-between px-7 py-3 mt-4 relative shadow-none"
+            data-ln="4"
+          >
+            <h4 class="w-96">Accouting and finance</h4>
+            <p>
+              4 weeks
+              <span class="block uppercase text-sm text-gray-400"
+                >duration</span
+              >
+            </p>
+            <p>
+              01
+              <span class="block uppercase text-xs text-gray-400"
+                >assignments</span
+              >
+            </p>
+            <button
+              class="absolute bg-orange-500 text-white hover:bg-white hover:text-orange-500 transition-all duration-300 font-extrabold px-3 py-1 rounded left-0 transform -translate-x-1/2 focus:outline-none"
+            >
+              +
+            </button>
+          </div>
+          <div
+            class="card-dark hidden lesson_details_4 text-gray-500 px-7 py-4"
+          >
+            <p>Managing of Accounts</p>
+            <p>Efficient investment and finance guide</p>
+          </div>
+        </div>
+      </section>
+      <section id="career_support" class="max-w-3xl mt-10">
+        <h4 class="text-gray-700 font-bold text-2xl py-2">Career Support</h4>
+        <p class="text-gray-400 text-base py-4">
+          Best-in-class content by leading faculty and industry leaders in the
+          form of videos, cases and projects.
+        </p>
+        <div class="grid grid-cols-3 grid-rows-2 mt-2 gap-3">
+          <div>
+            <h4>Career Counselling</h4>
+            <p>
+              Get personalised career pathing from exports to chart out the best
+              opportunities
+            </p>
+          </div>
+          <div>
+            <h4>Resume Feedback</h4>
+            <p>
+              Get personalised career pathing from exports to chart out the best
+              opportunities
+            </p>
+          </div>
+          <div>
+            <h4>Interview Preparation</h4>
+            <p>
+              Get personalised career pathing from exports to chart out the best
+              opportunities
+            </p>
+          </div>
+          <div>
+            <h4>Job Placement</h4>
+            <p>
+              Get personalised career pathing from exports to chart out the best
+              opportunities
+            </p>
+          </div>
+          <div>
+            <h4>Immersion Program</h4>
+            <p>
+              Get personalised career pathing from exports to chart out the best
+              opportunities
+            </p>
+          </div>
+          <div>
+            <h4>Emminent Faculty</h4>
+            <p>
+              Get personalised career pathing from exports to chart out the best
+              opportunities
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="faculty" class="max-w-3xl mt-10">
+        <h4 class="text-gray-700 font-bold text-2xl py-2">Faculty</h4>
+        <p class="text-gray-400 text-base py-4">
+          Best-in-class content by leading faculty and industry leaders in the
+          form of videos, cases and projects.
+        </p>
+        <div class="grid grid-cols-2 grid-rows-2 mt-2 gap-3">
+          <div>
+            <h4>Dr.Gupta</h4>
+            <p>IIT, MBA</p>
+          </div>
+          <div>
+            <h4>Mohit Mishra</h4>
+            <p>IIM Management</p>
+          </div>
+          <div>
+            <h4>Rohit Yadav</h4>
+            <p>IIM Management</p>
+          </div>
+          <div>
+            <h4>Rohit Talawade</h4>
+            <p>NIT MBA</p>
+          </div>
+        </div>
+      </section>
+      <section id="admission_process" class="max-w-3xl mt-10">
+        <h4 class="text-gray-700 font-bold text-2xl py-2">
+          Eligibility and Application Process
+        </h4>
+        <p class="text-gray-400 text-base py-4">
+          Please find below details step to be followed as part of the admission
+          process
+        </p>
+        <ul id="process" class="mt-10">
+          <li>
+            <div>
+              <h4>Complete Application</h4>
+              <p>
+                Fill program application form and pay one time registration fees
+                of Rs. 1500
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Selection Test</h4>
+              <p>
+                Appear for a 30 min online Aptitude test, consisting of 15
+                questions encompasing Quantitative Aptitude, Verbal reasoning
+                logical reasoning and Data interpretation
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Get shortlisted and receive offer</h4>
+              <p>
+                The candidates will be evaluated based on their profile i.e.,
+                professional experience, graduation and post graduation degree
+                scores, and selection test. Select candidates may be asked to
+                appear for an online interview
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Block Your Seat</h4>
+              <p>
+                Upon receiving the offer letter from NMIMS Global Access, block
+                seat by paying a seat reservation amount of Rs. 40000
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Document submission</h4>
+              <p>Submit self attested documents</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Balance Closure</h4>
+              <p>Pay the balance fee. 0% interest EMI options available</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="form" class="block lg:hidden mx-auto w-88">
+        <div class="w-88 md:w-120 p-5 card">
+          <div class="text-center pt-6">
+            <h4 class="text-gray-700 font-bold text-xl">
+              Interested in this program
+            </h4>
+            <p class="text-gray-400 text-base p-1">
+              Please fill the following details
+            </p>
+          </div>
+          <form action="" class="mt-3">
+            <div>
+              <label for="fname">Full name</label>
+              <input type="text" name="fname" id="fname" class="border" />
+            </div>
+            <div>
+              <label for="email">email address</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div>
+              <label for="mob_num">mobile number</label>
+              <input type="text" name="mob_num" id="mob_num" />
+            </div>
+            <div>
+              <label for="city">Select city</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <button class="w-full mt-4 p-2 btn-orange" type="submit">
+              apply now
+            </button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <footer id="footer" class="bg-gray-800 mt-20 px-2">
+      <div class="max-w-6xl m-auto py-4 tracking-wide">
+        <h3 class="uppercase text-gray-200 text-xl">
+          getmyuni <span class="font-extrabold">learn</span>
+        </h3>
+        <div class="flex justify-between py-8">
+          <div>
+            <h4 class="uppercase text-sm text-white pb-2">
+              Trending certification courses
+            </h4>
+            <p>Data Science|PG Diploma</p>
+            <p>Machine Learning|PG Diploma</p>
+            <p>Business Analytics|MBA(Executive)</p>
+            <p>Business Analytics|Certification</p>
+          </div>
+          <div>
+            <h4 class="uppercase text-sm text-white pb-2">Management</h4>
+            <p>Darkin Business School|MBA (Global)</p>
+            <p>LiverPool Business School|MBA (Global)</p>
+            <p>MBA in Digital Finance and Banking|MBA</p>
+            <p>Management|PG program</p>
+          </div>
+          <div>
+            <h4 class="uppercase text-sm text-white pb-2">Company</h4>
+            <p>About Us</p>
+            <p>Advertise with us</p>
+            <p>Press</p>
+            <p>Careers</p>
+          </div>
+          <div>
+            <h4 class="uppercase text-sm text-white pb-2">Follow us on</h4>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>LinkedIn</p>
+            <p>Youtube</p>
+          </div>
+        </div>
+        <hr class="border-gray-600 my-2" />
+        <p class="py-4">&copy; 2021 getmyuni. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply inline-block p-2 rounded;
+}
+
+.btn-white {
+  @apply bg-gray-100 text-indigo-500;
+}
+
+.card {
+  @apply bg-white rounded shadow;
+}
+
+.card-rounded_top {
+  @apply bg-white rounded-t border;
+}
+
+.card-dark {
+  @apply bg-gray-100 rounded-b shadow border;
+}
+
+.clip-desgin {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+}
+
+#course_add_details h4 {
+  @apply text-lg font-semibold text-gray-700;
+}
+
+#course_add_details h4 span {
+  @apply table text-xs uppercase text-gray-400;
+}
+
+#inner_nav a:link,
+#inner_nav a:visited {
+  @apply uppercase text-gray-700 font-semibold text-sm py-2 inline-block;
+}
+
+#inner_nav a.selected,
+#course_header a.selected {
+  @apply text-orange-500 border-b-4  border-orange-500;
+}
+
+#form form label {
+  @apply block uppercase font-bold p-2 text-gray-700 text-sm;
+}
+
+#form form input {
+  @apply border w-full rounded p-2 outline-none;
+}
+
+.btn-orange {
+  @apply hover:bg-white rounded focus:outline-none transition-all duration-300 font-bold hover:text-orange-500 bg-orange-500 uppercase text-white;
+}
+
+#course_header li a {
+  @apply uppercase text-base;
+}
+
+#footer div p {
+  @apply text-gray-200 text-xs;
+}
+
+#footer div h4 {
+  @apply text-gray-200 text-sm uppercase pb-3 font-bold;
+}
+
+#career_support .grid div,
+#faculty .grid div {
+  @apply card relative p-4 text-center;
+}
+
+#faculty .grid div {
+  @apply py-10;
+}
+
+#career_support .grid div p,
+#faculty .grid div p,
+#process li p {
+  @apply text-gray-400 text-sm;
+}
+
+#career_support .grid h4 {
+  @apply mt-28 font-bold text-gray-700;
+}
+
+#faculty .grid h4,
+#process li h4 {
+  @apply font-bold text-gray-700;
+}
+
+#career_support .grid div::after,
+#faculty .grid div::after {
+  position: absolute;
+  content: "";
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: rgba(212, 212, 212, 1);
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#faculty .grid div::after {
+  left: 20%;
+  /* transform: translateY(-5%); */
+}
+
+#process li {
+  @apply list-none relative w-0.5 bg-orange-500 py-2;
+}
+
+#process li:last-child {
+  @apply bg-gray-50;
+}
+
+#process li div {
+  @apply relative -top-8 p-2 left-20 card px-8 py-4 w-88;
+}
+
+@media (min-width: 1024px) {
+  #process li div {
+    width: 43rem /* 368px */;
+  }
+}
+
+#process li div::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(245, 245, 245, 1);
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#process li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: 1rem;
+  height: 1rem;
+  background: rgba(249, 115, 22, 1);
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
